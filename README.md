@@ -38,3 +38,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+|  | Pemrograman Berbasis Framework 2024 |
+|--|--|
+| NIM |  2141720260|
+| Nama |  Raynor Herfian Iqbal Fawwaz |
+| Kelas | TI - 3I |
+
+## Praktikum 1
+![alt text](image.png)
+
+The nextJS project importing the css style and also resources from bootstrap that provided from the Javascript
