@@ -50,3 +50,24 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ![alt text](image.png)
 
 The nextJS project importing the css style and also resources from bootstrap that provided from the Javascript
+
+## Praktikum 2
+### Soal 1
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+based on the result we can access the login and logout message. When we press the button under the card-body we the function handleAuth will alternate between login and logout
+
+### Soal 2
+Line 25
+```
+parse('<div class="alert alert-success">Yay, berhasil login!!!</div>'),
+```
+
+Line 30
+```
+parse('<div class="alert alert-dark">Anda telah logout!</div>'),
+```
+
+Parse command refers to done the elements as JSX elements with background. If we didn't use the parse command it will be normal HTML strings
