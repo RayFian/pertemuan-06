@@ -71,3 +71,11 @@ parse('<div class="alert alert-dark">Anda telah logout!</div>'),
 ```
 
 Parse command refers to done the elements as JSX elements with background. If we didn't use the parse command it will be normal HTML strings
+
+
+## Praktikum 3
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+In this practicum we asked to create counter as an implementation of how to manage state using Redux in NextJS.
