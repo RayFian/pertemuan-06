@@ -79,3 +79,42 @@ Parse command refers to done the elements as JSX elements with background. If we
 ![alt text](image-4.png)
 
 In this practicum we asked to create counter as an implementation of how to manage state using Redux in NextJS.
+
+## Pertanyaan
+
+1. Apa kegunaan dari kode ini import { useEffect } from "react"; Pada file pages/_app.tsx? jelaskan
+
+### Jawaban
+The purpose of the code import { useEffect } from "react"; in the file pages/_app.tsx is to bring in the useEffect function from the React module. This function helps manage side effects in functional components. It's useful for things like handling actions when a component mounts, updates, or unmounts.
+
+2. Jika pada file pages/_app.tsx kita tidak menggunakan useEffect menghapus baris 3, dan baris 9-11, apa yang akan terjadi?
+
+### Jawaban
+If lines 3 and 9-11, which contain the usage of useEffect, are removed from the file pages/_app.tsx, there won't be any noticeable effect on the _app.tsx component. However, if the _app.tsx component is used to manage something that requires side effects, such as setting metadata on page changes, then that functionality will be lost.
+
+3. Mengapa di react/nextjs penulisan tag html untuk class, harus diganti menjadi className?
+
+### Jawaban
+In React/Next.js, using className instead of class in HTML tags is done because JSX, the syntax extension used by React, conflicts with the JavaScript keyword class. To avoid confusion between HTML attributes and class usage in JavaScript, HTML attribute class is replaced with className in JSX.
+
+4. Apakah store pada nextjs bisa menyimpan banyak redux reducer?
+
+### Jawaban
+In Next.js, a store typically refers to state management, especially when using Redux. The Redux store in Next.js can store multiple reducers. The store.js file is where the Redux store is usually defined and configured. It includes creating the store, combining reducers, and applying middleware if needed. This file is important as it serves as the central place for state management in Next.js applications using Redux.
+
+5. Jelaskan kegunaan dari file store.js!
+
+### Jawaban
+In the file pages/login.tsx, the code const { isLogin } = useSelector((state) => state.auth); is used to retrieve the value isLogin from the Redux state stored in the auth reducer. This indicates that the login.tsx component uses Redux to manage the user's login status. The value isLogin is likely used to control the display or behavior of the component based on the user's login status.
+
+6. Pada file pages/login.tsx, apa maksud dari kode ini ?
+const { isLogin } = useSelector((state) => state.auth);
+
+### Jawaban
+In the file pages/counter.tsx, the code const {totalCounter} = useSelector((state) => state.counter); is used to fetch the value totalCounter from the Redux state stored in the counter reducer. This indicates that the counter.tsx component uses Redux to manage state related to counting. The value totalCounter is likely used to display the total count or perform other operations related to counting within the component.
+
+7. Pada file pages/counter.tsx, apa maksud dari kode ini?
+const {totalCounter} = useSelector((state) => state.counter);
+
+### Jawaban
+In the file pages/counter.tsx, the code const {totalCounter} = useSelector((state) => state.counter); means that it's using the useSelector hook from the React Redux library to access the totalCounter value from the Redux state. This line is extracting the totalCounter property from the state.counter object.
